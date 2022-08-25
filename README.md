@@ -4,4 +4,6 @@
 
 [![asciicast](https://asciinema.org/a/Sun7f12QWEYvAvKWw39hWM6HL.svg)](https://asciinema.org/a/Sun7f12QWEYvAvKWw39hWM6HL)
 
+[![asciicast](https://asciinema.org/a/Sun7f12QWEYvAvKWw39hWM6HL.svg)](https://asciinema.org/a/Sun7f12QWEYvAvKWw39hWM6HL)
+
 [![Actions Status](https://github.com/ACupOfWhiskey/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ACupOfWhiskey/python-project-lvl1/actions)
