@@ -18,6 +18,6 @@ def main():
             i += 1
         elif user_answer == "yes" or "..." and random_number % 2 != 0:
             return (print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "no".\nLet's try again, {user_name}!'''))
-        elif user_answer == "no" or "..."  and random_number % 2 == 0:
+        elif user_answer == "no" or "..." and random_number % 2 == 0:
             return (print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "yes".\nLet's try again, {user_name}!'''))
     print(f"Congratulations, {user_name}!")
