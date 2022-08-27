@@ -18,15 +18,16 @@ def brain_progression():
         progression = []
         progression = list(range(num1, num2, num3))
         index = randint(1, len(progression) - 1)
-        correct_answer = progression[index]
+        answer = progression[index]
         progression[index] = ".."
         new_progression = (" ".join(map(str, progression)))
         print(f"Question: {new_progression}")
         user_answer = prompt.string("Your answer: ")
-        if str(user_answer) == str(correct_answer):
+        if str(user_answer) == str(answer):
             right_answers += 1
             print("Correct!")
-        elif str(user_answer) != str(correct_answer) or str(user_answer) == "...":
-            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{correct_answer}". Let's try again, {user_name}!''')
+        elif str(user_answer) != str(answer) or str(user_answer) == "...":
+            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{answer}".''')
+            print("Let's try again, {user_name}!")
             return 0
     print(congratulation)

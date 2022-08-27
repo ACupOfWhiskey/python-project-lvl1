@@ -22,6 +22,7 @@ def brain_gcd():
             right_answers += 1
             print("Correct!")
         elif str(user_answer) != str(game_answer) or str(user_answer) == "...":
-            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{game_answer}". Let's try again, {user_name}!''')
+            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{game_answer}".''')
+            print(f"Let's try again, {user_name}!")
             return 0
     print(congratulation)

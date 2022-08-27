@@ -10,6 +10,7 @@ import math
 def greetings_user():
     print("Welcome to the Brain Games!")
 
+
 # Игра спрашивает имя пользователя
 def asking_user_name():
     global user_name
@@ -17,9 +18,11 @@ def asking_user_name():
     user_name = prompt.string("May I have your name? ")
     print(f"Hello, {user_name}!")
 
+
 # Условие для игры "Проверка на чётность"
 def brain_even_task():
     print('Answer "yes" if the number is even, otherwise answer "no".')
+
 
 # Основная логика игры "Проверка на чётность"
 def brain_even_logic():
@@ -38,9 +41,11 @@ def brain_even_logic():
             return (print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "yes".\nLet's try again, {user_name}!'''))
     print(f"Congratulations, {user_name}!")
 
+
 # Условие для игры "Калькулятор"
 def brain_calc_task():
     print("What is the result of the expression?")
+
 
 # Основная логика игры "Калькулятор"
 def brain_calc_logic():
@@ -68,9 +73,11 @@ def brain_calc_logic():
             return 0
     print(f"Congratulations, {user_name}!")
 
+
 # Условие для игры "НОД"
 def brain_gcd_task():
     print("Find the greatest common divisor of given numbers.")
+
 
 # Основная логика игры "НОД"
 def brain_gcd_logic():
@@ -86,13 +93,15 @@ def brain_gcd_logic():
             right_answers += 1
             print("Correct!")
         elif str(user_answer) != str(game_answer) or str(user_answer) == "...":
-            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{game_answer}". Let's try again, {user_name}!''')
+            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{game_answer}".\nLet's try again, {user_name}!''')
             return 0
     print(f"Congratulations, {user_name}!")
+
 
 # Условие для игры "Арифметическая прогрессия"
 def brain_progression_task():
     print("What number is missing in the progression?")
+
 
 # Основная логика игры "Арифметическая прогрессия"
 def brain_progression_logic():
@@ -114,13 +123,15 @@ def brain_progression_logic():
             right_answers += 1
             print("Correct!")
         elif str(user_answer) != str(correct_answer) or str(user_answer) == "...":
-            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{correct_answer}". Let's try again, {user_name}!''')
+            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{correct_answer}".\nLet's try again, {user_name}!''')
             return 0
     print(f"Congratulations, {user_name}!")
+
 
 # Условие для игры "Простое ли число?"
 def brain_prime_task():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
+
 
 # Основная логика для игры "Простое ли число?"
 def brain_prime_logic():
@@ -141,23 +152,15 @@ def brain_prime_logic():
             right_answers += 1
             print("Correct!")
         elif user_answer != right_answer or user_answer == "...":
-            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{right_answer}". Let's try again, {user_name}!''')
+            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{right_answer}".\nLet's try again, {user_name}!''')
             return 0
     print(f"Congratulations, {user_name}!")
 
+
 # Сообщение в случае правильного ответа пользователя
-def right_user_answer():
-    if str(user_answer) == str(game_question):
-        right_answers += 1
-        print("Correct!")
+
 
 # Сообщение в случае неправильного ответа пользователя
-def wrong_user_answer():
-    if str(user_answer) != str(game_question) or str(user_answer) == "...":
-        print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{game_question}". 
-        Let's try again, {user_name}!''')
-        return 0    
+
 
 # Завершение игры
-def congratulation():
-    print(f"Congratulations, {user_name}!")
