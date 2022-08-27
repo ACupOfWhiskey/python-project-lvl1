@@ -29,6 +29,7 @@ def brain_calc():
             right_answers += 1
             print("Correct!")
         elif str(user_answer) != str(game_question) or str(user_answer) == "...":
-            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{game_question}". Let's try again, {user_name}!''')
+            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{game_question}". 
+            Let's try again, {user_name}!''')
             return 0
         print(congratulation)
