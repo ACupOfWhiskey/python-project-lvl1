@@ -59,20 +59,20 @@ def brain_calc_logic():
     while right_answers != 3:
         random_operator = choice("+-*")
         num1 = randint(1, 20)
-        num2 = randint(1, 10)
+        num2 = randint(1, 30)
         print(f"Question: {num1} {random_operator} {num2}")
-        user_answer = prompt.string("Your answer: ")
+        answer = prompt.string("Your answer: ")
         if random_operator == "+":
             result = num1 + num2
         elif random_operator == "-":
             result = num1 - num2
         elif random_operator == "*":
             result = num1 * num2
-        if str(user_answer) == str(result):
+        if str(answer) == str(result):
             right_answers += 1
             print("Correct!")
-        elif str(user_answer) != str(result) or str(user_answer) == "...":
-            print(f'''"{user_answer}" is wrong answer ;(. \
+        else:
+            print(f'''"{answer}" is wrong answer ;(. \
 Correct answer was "{result}".
 Let's try again, {user_name}!''')
             return 0
