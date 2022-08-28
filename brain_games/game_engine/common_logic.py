@@ -21,7 +21,8 @@ def asking_user_name():
 
 # Условие для игры "Проверка на чётность"
 def brain_even_task():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('Answer "yes" if the number is even, \
+otherwise answer "no".')
 
 
 # Основная логика игры "Проверка на чётность"
@@ -32,13 +33,18 @@ def brain_even_logic():
         random_number = randint(0, 100)
         print(f"Question: {random_number}")
         user_answer = prompt.string("Your answer: ")
-        if (user_answer == 'yes' and random_number % 2 == 0) or (user_answer == 'no' and random_number % 2 != 0):
-            print("Correct!")
+        if random_number % 2 == 0:
+            result = "yes"
+        elif random_number % 2 != 0:
+            result = "no"
+        if str(user_answer) == str(result):
             right_answers += 1
-        elif user_answer == "yes" or "..." and random_number % 2 != 0:
-            return (print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "no".\nLet's try again, {user_name}!'''))
-        elif user_answer == "no" or "..." and random_number % 2 == 0:
-            return (print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "yes".\nLet's try again, {user_name}!'''))
+            print("Correct!")
+        else:
+            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{result}".
+Let's try again, {user_name}!''')
+            right_answers = 0
+            return 0
     print(f"Congratulations, {user_name}!")
 
 
