@@ -55,28 +55,25 @@ def brain_calc_task():
 
 # Основная логика игры "Калькулятор"
 def brain_calc_logic():
-    operator = ["+", "-", "*"]
     right_answers = 0
-    win_score = 3
-    while right_answers < win_score:
-        random_operator = choice(operator)
+    while right_answers != 3:
+        random_operator = choice("+-*")
         num1 = randint(1, 20)
         num2 = randint(1, 10)
-        question = f"{num1} {random_operator} {num2}"
-        print("Question:", question)
+        print(f"Question: {num1} {random_operator} {num2}")
         user_answer = prompt.string("Your answer: ")
-        if random_operator == operator[0]:
-            question = num1 + num2
-        elif random_operator == operator[1]:
-            question = num1 - num2
-        elif random_operator == operator[2]:
-            question = num1 * num2
-        if str(user_answer) == str(question):
+        if random_operator == "+":
+            result = num1 + num2
+        elif random_operator == "-":
+            result = num1 - num2
+        elif random_operator == "*":
+            result = num1 * num2
+        if str(user_answer) == str(result):
             right_answers += 1
             print("Correct!")
-        elif str(user_answer) != str(question) or str(user_answer) == "...":
+        elif str(user_answer) != str(result) or str(user_answer) == "...":
             print(f'''"{user_answer}" is wrong answer ;(. \
-Correct answer was "{question}".
+Correct answer was "{result}".
 Let's try again, {user_name}!''')
             return 0
     print(f"Congratulations, {user_name}!")
