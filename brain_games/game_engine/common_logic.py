@@ -40,7 +40,8 @@ def brain_even_logic():
             right_answers += 1
             print("Correct!")
         else:
-            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{result}".
+            print(f'''"{user_answer}" is wrong answer ;(. \
+Correct answer was "{result}".
 Let's try again, {user_name}!''')
             right_answers = 0
             return 0
@@ -61,20 +62,22 @@ def brain_calc_logic():
         random_operator = choice(operator)
         num1 = randint(1, 20)
         num2 = randint(1, 10)
-        game_question = f"{num1} {random_operator} {num2}"
-        print("Question:", game_question)
+        question = f"{num1} {random_operator} {num2}"
+        print("Question:", question)
         user_answer = prompt.string("Your answer: ")
         if random_operator == operator[0]:
-            game_question = num1 + num2
+            question = num1 + num2
         elif random_operator == operator[1]:
-            game_question = num1 - num2
+            question = num1 - num2
         elif random_operator == operator[2]:
-            game_question = num1 * num2
-        if str(user_answer) == str(game_question):
+            question = num1 * num2
+        if str(user_answer) == str(question):
             right_answers += 1
             print("Correct!")
-        elif str(user_answer) != str(game_question) or str(user_answer) == "...":
-            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{game_question}".\nLet's try again, {user_name}!''')
+        elif str(user_answer) != str(question) or str(user_answer) == "...":
+            print(f'''"{user_answer}" is wrong answer ;(. \
+Correct answer was "{question}".
+Let's try again, {user_name}!''')
             return 0
     print(f"Congratulations, {user_name}!")
 
@@ -98,7 +101,9 @@ def brain_gcd_logic():
             right_answers += 1
             print("Correct!")
         elif str(user_answer) != str(game_answer) or str(user_answer) == "...":
-            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{game_answer}".\nLet's try again, {user_name}!''')
+            print(f'''"{user_answer}" is wrong answer ;(. \
+Correct answer was "{game_answer}".
+Let's try again, {user_name}!''')
             return 0
     print(f"Congratulations, {user_name}!")
 
@@ -119,16 +124,18 @@ def brain_progression_logic():
         progression = []
         progression = list(range(num1, num2, num3))
         index = randint(1, len(progression) - 1)
-        correct_answer = progression[index]
+        answer = progression[index]
         progression[index] = ".."
         new_progression = (" ".join(map(str, progression)))
         print(f"Question: {new_progression}")
         user_answer = prompt.string("Your answer: ")
-        if str(user_answer) == str(correct_answer):
+        if str(user_answer) == str(answer):
             right_answers += 1
             print("Correct!")
-        elif str(user_answer) != str(correct_answer) or str(user_answer) == "...":
-            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{correct_answer}".\nLet's try again, {user_name}!''')
+        elif str(user_answer) != str(answer) or str(user_answer) == "...":
+            print(f'''"{user_answer}" is wrong answer ;(. \
+Correct answer was "{answer}".
+Let's try again, {user_name}!''')
             return 0
     print(f"Congratulations, {user_name}!")
 
@@ -157,7 +164,9 @@ def brain_prime_logic():
             right_answers += 1
             print("Correct!")
         elif user_answer != right_answer or user_answer == "...":
-            print(f'''"{user_answer}" is wrong answer ;(. Correct answer was "{right_answer}".\nLet's try again, {user_name}!''')
+            print(f'''"{user_answer}" is wrong answer ;(. \
+Correct answer was "{right_answer}".
+Let's try again, {user_name}!''')
             return 0
     print(f"Congratulations, {user_name}!")
 
