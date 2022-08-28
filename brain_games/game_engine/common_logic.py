@@ -21,8 +21,7 @@ def asking_user_name():
 
 # Условие для игры "Проверка на чётность"
 def brain_even_task():
-    print('Answer "yes" if the number is even, \
-otherwise answer "no".')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
 
 # Основная логика игры "Проверка на чётность"

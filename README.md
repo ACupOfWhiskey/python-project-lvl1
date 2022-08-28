@@ -21,4 +21,5 @@
 Игра: "Простое ли число?"
 [![asciicast](https://asciinema.org/a/x0DQsUR4xFgzhOGYBypuwBkS4.svg)](https://asciinema.org/a/x0DQsUR4xFgzhOGYBypuwBkS4)
 
-Установить комплект игр "Brain Games" можно командой python3 -m pip install brain_games --user
+Установить комплект игр "Brain Games" можно, набрав команду python3 -m pip install brain_games --user в терминале Вашего компьютера. В записи, расположенной ниже, продемонстрирована установка приложения и игровой процесс всех 5 игр:
+[![asciicast](https://asciinema.org/a/SDDN0Jy0lmL2SFNwBlQeDaHmG.svg)](https://asciinema.org/a/SDDN0Jy0lmL2SFNwBlQeDaHmG)
