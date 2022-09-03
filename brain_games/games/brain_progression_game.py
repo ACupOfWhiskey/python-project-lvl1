@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from brain_games.game_engine.common_logic import greetings_user
 from brain_games.game_engine.common_logic import asking_user_name
 from brain_games.game_engine.common_logic import brain_progression_task

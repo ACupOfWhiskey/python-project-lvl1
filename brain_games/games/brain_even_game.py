@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import brain_games.game_engine.common_logic
 
 

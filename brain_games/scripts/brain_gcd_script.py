@@ -6,5 +6,5 @@ def main():
     brain_gcd_game()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
