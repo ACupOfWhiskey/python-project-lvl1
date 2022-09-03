@@ -34,5 +34,9 @@ ____
 
 ____
 
-Установить комплект игр "Brain Games" можно, набрав команду python3 -m pip install brain_games --user в терминале Вашего компьютера. В записи, расположенной ниже, продемонстрирована установка приложения и игровой процесс всех 5 игр:
+Установить комплект игр "Brain Games" можно, набрав команду 
+```python
+python3 -m pip install brain_games --user 
+```
+в терминале Вашего компьютера. В записи, расположенной ниже, продемонстрирована установка приложения и игровой процесс всех 5 игр:
 [![asciicast](https://asciinema.org/a/SDDN0Jy0lmL2SFNwBlQeDaHmG.svg)](https://asciinema.org/a/SDDN0Jy0lmL2SFNwBlQeDaHmG)
