@@ -3,6 +3,8 @@ from random import randint
 from random import randrange
 from random import choice
 import math
+start = 0  # constant в рамках определения случайного числа: начало диапазона
+end = 100  # constant в рамках определения случайного числа: конец диапазона
 
 
 # Игра приветствует пользователя
@@ -13,7 +15,6 @@ def greetings_user():
 # Игра спрашивает имя пользователя
 def asking_user_name():
     global user_name
-    user_name = ' '
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
 
@@ -28,7 +29,7 @@ def brain_even_logic():
     right_answers = 0
     win_score = 3
     while right_answers < win_score:
-        random_number = randint(0, 100)
+        random_number = randint(start, end)
         print(f'Question: {random_number}')
         user_answer = prompt.string('Your answer: ')
         if random_number % 2 == 0:
@@ -57,8 +58,8 @@ def brain_calc_logic():
     right_answers = 0
     while right_answers != 3:
         random_operator = choice("+-*")
-        num1 = randint(1, 20)
-        num2 = randint(1, 30)
+        num1 = randint(start, end)
+        num2 = randint(start, end)
         print(f'Question: {num1} {random_operator} {num2}')
         answer = prompt.string('Your answer: ')
         if random_operator == '+':
@@ -88,8 +89,9 @@ def brain_gcd_logic():
     right_answers = 0
     win_score = 3
     while right_answers < win_score:
-        num1 = randrange(0, 100, 5)
-        num2 = randrange(0, 100, 5)
+        step_range = 5  # диапазон шага, с которым будет сформирована последовательность чисел
+        num1 = randrange(start, end, step_range)
+        num2 = randrange(start, end, step_range)
         print(f'Question: {num1} {num2}')
         user_answer = prompt.string('Your answer: ')
         game_answer = math.gcd(num1, num2)
@@ -146,7 +148,7 @@ def brain_prime_logic():
     right_answers = 0
     win_score = 3
     while right_answers < win_score:
-        random_number = randint(1, 100)
+        random_number = randint(start, end)
         divisor = 2
         while random_number % divisor != 0:
             divisor += 1
