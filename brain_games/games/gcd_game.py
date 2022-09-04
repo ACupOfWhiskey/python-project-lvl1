@@ -16,7 +16,7 @@ def gcd_logic(num1, num2):
 
 
 def question_and_answer():
-    base_num = randint(start, end)  # переменная для приведения к общему делителю
+    base_num = randint(start, end)  # для приведения к общему делителю
     num1 = randint(start, end) * base_num
     num2 = randint(start, end) * base_num
     question = f'{num1} {num2}'
