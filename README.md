@@ -25,7 +25,7 @@ make package-install
 ```
 <br>В записи, расположенной ниже, продемонстрирована непосредственная установка приложения:
 
-[![asciicast](https://asciinema.org/a/SDDN0Jy0lmL2SFNwBlQeDaHmG.svg)](https://asciinema.org/a/SDDN0Jy0lmL2SFNwBlQeDaHmG)
+[![asciicast](https://asciinema.org/a/bjmt7GFUZBKlNvpzHbmae9zyt.svg)](https://asciinema.org/a/bjmt7GFUZBKlNvpzHbmae9zyt)
 ____
 ### Игра: "Проверка на чётность"
 Суть игры в том, что программой Вам будет представлено определенное число, и нужно будет выяснить, является ли оно четным или же нет. Для успешного завершения игры Вам нужно будет ответить правильно три раза подряд. <br>Чтобы запустить игру нужно набрать команду `brain-even` в терминале на Вашем компьютере.
