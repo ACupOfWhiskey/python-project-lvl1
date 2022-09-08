@@ -2,14 +2,14 @@ from random import randint
 from random import choice
 
 
-task = 'What is the result of the expression?'
-start = 1  # constant в рамках определения случайного числа: начало диапазона
-end = 50  # constant в рамках определения случайного числа: конец диапазона
+TASK = 'What is the result of the expression?'
+START = 1  # constant within the definition of a random number: start of range
+END = 50  # constant within the definition of a random number: end of range
 
 
 def question_and_answer():
-    num1 = randint(start, end)
-    num2 = randint(start, end)
+    num1 = randint(START, END)
+    num2 = randint(START, END)
     operators = ['+', '-', '*']
     random_operator = choice(operators)
     if random_operator == '+':
