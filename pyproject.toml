@@ -7,8 +7,8 @@ packages = [
 	{ include = "brain_games" },
 ]
 classifiers = [
-	"Topic :: Games/Entertainment :: Puzzle Games"
-	"Programming language :: Python :: 3.8"
+	"Topic :: Games/Entertainment :: Puzzle Games",
+	"Programming language :: Python :: 3.8",
 	"Operating System :: Linux :: Ubuntu"
 ]
 repository = "https://github.com/ACupOfWhiskey/python-project-lvl1"
