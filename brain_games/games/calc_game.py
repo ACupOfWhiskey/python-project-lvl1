@@ -7,7 +7,7 @@ START = 1  # constant within the definition of a random number: start of range
 END = 50  # constant within the definition of a random number: end of range
 
 
-def question_and_answer():
+def get_question_and_answer():
     num1 = randint(START, END)
     num2 = randint(START, END)
     operators = ['+', '-', '*']

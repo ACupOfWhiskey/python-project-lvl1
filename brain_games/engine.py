@@ -9,7 +9,7 @@ def run_game(game):
     print(f'Hello, {user_name}!')
     print(game.TASK)
     for _ in range(MAX_GAME_SCORE):
-        question, correct_answer = game.question_and_answer()
+        question, correct_answer = game.get_question_and_answer()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
         if user_answer == correct_answer:

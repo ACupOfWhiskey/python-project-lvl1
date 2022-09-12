@@ -10,7 +10,7 @@ START_LENGTH = 6  # progression length (start of range)
 END_LENGTH = 10  # progression length (end of range)
 
 
-def question_and_answer():
+def get_question_and_answer():
     start = randint(START_RANGE, END_RANGE)
     step = randint(START_STEP, END_STEP)
     length = randint(START_LENGTH, END_LENGTH)

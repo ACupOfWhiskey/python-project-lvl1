@@ -23,7 +23,7 @@ def is_prime_number(num):
     return True
 
 
-def question_and_answer():
+def get_question_and_answer():
     question = randint(START, END)
     if is_prime_number(question):
         correct_answer = 'yes'
