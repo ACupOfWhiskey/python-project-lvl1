@@ -27,7 +27,7 @@ make package-install
 
 [![asciicast](https://asciinema.org/a/bjmt7GFUZBKlNvpzHbmae9zyt.svg)](https://asciinema.org/a/bjmt7GFUZBKlNvpzHbmae9zyt)
 ____
-### "Is it a even number?"
+### "Is it an even number?"
 The essence of the game is that the program will present you with a certain number, and you will need to find out whether it is even or not. To successfully complete the game, you will need to answer correctly three times in a row. <br>To start the game you need to type the command `brain-even` in the terminal on your computer.
 
 [![asciicast](https://asciinema.org/a/Sun7f12QWEYvAvKWw39hWM6HL.svg)](https://asciinema.org/a/Sun7f12QWEYvAvKWw39hWM6HL)

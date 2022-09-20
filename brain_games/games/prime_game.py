@@ -2,8 +2,10 @@ from random import randint
 
 
 TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-START = 2  # constant within the definition of a random number: start of range
-END = 20  # constant within the definition of a random number: end of range
+# constant within the definition of a random number: start of range
+START = 2
+# constant within the definition of a random number: end of range
+END = 20
 
 
 def is_prime_number(num):
@@ -25,8 +27,5 @@ def is_prime_number(num):
 
 def get_question_and_answer():
     question = randint(START, END)
-    if is_prime_number(question):
-        correct_answer = 'yes'
-    else:
-        correct_answer = 'no'
-    return question, str(correct_answer)
+    correct_answer = 'yes' if is_prime_number(question) else 'no'
+    return question, correct_answer

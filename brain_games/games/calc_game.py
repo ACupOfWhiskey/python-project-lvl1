@@ -3,8 +3,10 @@ from random import choice
 
 
 TASK = 'What is the result of the expression?'
-START = 1  # constant within the definition of a random number: start of range
-END = 50  # constant within the definition of a random number: end of range
+# constant within the definition of a random number: start of range
+START = 1
+# constant within the definition of a random number: end of range
+END = 50
 
 
 def get_question_and_answer():
