@@ -8,15 +8,14 @@ START = 0
 END = 100
 
 
-def get_question_and_answer():
-    question = randint(START, END)
-    correct_answer = 'yes' if is_even(question) else 'no'
-    return question, correct_answer
-
-def is_even(num):
+def is_even_number(num):
     if num % 2 == 0:
         return True
-    elif num % 2 != 0:
-        return False
     else:
         return False
+
+
+def get_question_and_answer():
+    question = randint(START, END)
+    correct_answer = 'yes' if is_even_number(question) else 'no'
+    return question, correct_answer
