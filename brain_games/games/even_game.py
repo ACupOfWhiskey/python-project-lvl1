@@ -11,6 +11,8 @@ END = 100
 def is_even_number(num):
     if num % 2 == 0:
         return True
+    elif num % 2 != 0:
+        return False
     else:
         return False
 
