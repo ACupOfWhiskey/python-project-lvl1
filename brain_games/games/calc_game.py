@@ -9,14 +9,6 @@ START = 1
 END = 50
 
 
-def get_question_and_answer():
-    num1 = randint(START, END)
-    num2 = randint(START, END)
-    random_operator = choice(['+', '-', '*'])
-    question = f'{num1} {random_operator} {num2}'
-    return question, str(is_this_correct_operator(num1, num2, random_operator))
-
-
 def is_this_correct_operator(num1, num2, random_operator):
     if random_operator == '+':
         correct_answer = num1 + num2
@@ -25,3 +17,12 @@ def is_this_correct_operator(num1, num2, random_operator):
     elif random_operator == '*':
         correct_answer = num1 * num2
     return correct_answer
+
+
+def get_question_and_answer():
+    num1 = randint(START, END)
+    num2 = randint(START, END)
+    random_operator = choice(['+', '-', '*'])
+    question = f'{num1} {random_operator} {num2}'
+    correct_answer = str(is_this_correct_operator(num1, num2, random_operator))
+    return question, correct_answer
