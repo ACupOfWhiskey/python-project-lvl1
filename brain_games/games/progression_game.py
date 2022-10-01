@@ -24,7 +24,7 @@ def get_progression(start, length, step):
     random_index = randint(0, 4)
     correct_answer = str(numbers[random_index])
     numbers[random_index] = '..'
-    # determine the number of numbers in a progression
+    # determine the ammount of numbers in a progression
     string = ' '.join(map(str, numbers[:5]))
     return string, correct_answer
 
