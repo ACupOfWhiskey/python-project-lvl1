@@ -1,5 +1,4 @@
 from random import randint
-from random import choice
 
 
 TASK = 'What number is missing in the progression?'
