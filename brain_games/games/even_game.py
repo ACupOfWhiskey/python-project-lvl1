@@ -1,7 +1,7 @@
 from random import randint
 
 
-TASK = 'Answer "yes" if number even otherwise answer "no".'
+TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
 # constant within the definition of a random number: start of range
 START = 0
 # constant within the definition of a random number: end of range
