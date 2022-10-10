@@ -1,6 +1,6 @@
+import promt
+
+
 def welcome_user():
-    name = ''
-    while name == '':
-        print("May I have your name? ", end='')
-        name = input()
+    name = promt.string('May I have your name? ')
     print(f'Hello, {name}!')

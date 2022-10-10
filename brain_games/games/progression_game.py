@@ -1,4 +1,5 @@
 from random import randint
+from random import choice
 
 
 TASK = 'What number is missing in the progression?'
@@ -16,22 +17,16 @@ START_STEP = 2
 END_STEP = 10
 
 
-def get_progression(start, length, step):
-    numbers = []
-    for k in range(start, length, step):
-        numbers.append(k)
-    numbers.sort()
-    random_index = randint(0, 4)
-    correct_answer = str(numbers[random_index])
-    numbers[random_index] = '..'
-    # determine the ammount of numbers in a progression
-    string = ' '.join(map(str, numbers[:5]))
-    return string, correct_answer
+def get_progression():
+    start = randint(START_RANGE, END_RANGE)
+    length = randint(START_LENGTH, END_LENGTH)
+    step = randint(START_STEP, END_STEP)
+    return list(range(start, length, step))
 
 
 def get_question_and_answer():
-    start = randint(START_RANGE, END_RANGE)
-    step = randint(START_STEP, END_STEP)
-    length = randint(START_LENGTH, END_LENGTH)
-    question, correct_answer = get_progression(start, length, step)
+    progression = get_progression()
+    correct_answer = str(choice(progression))
+    progression = ' '.join(str(i) for i in progression)
+    question = progression.replace(correct_answer, "..")
     return question, correct_answer
